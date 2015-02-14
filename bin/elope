@@ -1,4 +1,5 @@
 #!/bin/sh
+# PODNAME: elope
 
 ELOPE_ENVRC_DIR=${ELOPE_ENVRC_DIR:=$(dirname $0)/../etc/envrc}
 ELOPE_ENV=$1
