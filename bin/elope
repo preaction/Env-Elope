@@ -1,12 +1,12 @@
 #!/bin/sh
 
-ENVRC_DIR=${ENVRC_DIR:=$(dirname $0)/../etc/envrc}
-ENV=$1
+ELOPE_ENVRC_DIR=${ELOPE_ENVRC_DIR:=$(dirname $0)/../etc/envrc}
+ELOPE_ENV=$1
 shift
-if [ ! -e "$ENVRC_DIR/$ENV" ]; then
-    echo "Elope error: Could not find environment $ENV in envrc dir $ENVRC_DIR"
+if [ ! -e "$ELOPE_ENVRC_DIR/$ELOPE_ENV" ]; then
+    echo "Elope error: Could not find environment $ELOPE_ENV in envrc dir $ELOPE_ENVRC_DIR"
     exit 1
 fi
 
-source "$ENVRC_DIR/$ENV"
+source "$ELOPE_ENVRC_DIR/$ELOPE_ENV"
 exec $@
