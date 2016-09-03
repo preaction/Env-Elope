@@ -1,10 +1,5 @@
 Changelog for Env-Elope
 
-0.001 2015-02-14T20:25:24
- - add documentation on how to setup and use elope
- - move to Test::Compile instead of boilerplate test
- - add initial Env::Elope config module
- - prefix with ELOPE_ to play nice with other stuff
- - add example elope shell script
- - Minting dist
+{{ $NEXT }}
 
+ - Initial release
